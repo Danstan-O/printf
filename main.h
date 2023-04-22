@@ -2,7 +2,7 @@
 #define MAIN_H
 
 int _printf(const char *format, ...);
-int print(char c);
+int putchar(char c);
 
 
 
