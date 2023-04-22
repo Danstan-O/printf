@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 
-int _printf(const char *format, ...)
+int print(char c)
 {
-
+return (write(1, &c, c));
 }
