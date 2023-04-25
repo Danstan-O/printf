@@ -1,6 +1,6 @@
 #include "main.h"
 
-/****************** PRINT POINTER ******************/
+/****************** PRINTS POINTER ******************/
 /**
  * print_pointer - Prints the value of a pointer variable
  * @types: List a of arguments
@@ -56,7 +56,7 @@ return (write_pointer(buffer, ind, length,
 width, flags, padd, extra_c, padd_start));
 }
 
-/************************* PRINT REVERSE *************************/
+/******************* PRINTS REVERSE ***********************/
 /**
  * print_reverse - Prints reverse string.
  * @types: Lista of arguments

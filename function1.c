@@ -1,8 +1,8 @@
 #include "main.h"
 
-/************************* PRINT NON PRINTABLE *************************/
+/************************* PRINTS NON PRINTABLE *************************/
 /**
- * print_non_printable - Prints ascii codes in hexa of non printable chars
+ * non_printable - Prints ascii codes in hexa of non printable chars
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -40,7 +40,7 @@ int non_printable(va_list types, char buffer[],
 	return (write(1, buffer, i + offset));
 }
 
-/************************* PRINT INT *************************/
+/*************** PRINTS INT ********************/
 /**
  * print_int - Print int
  * @types: Lista of arguments

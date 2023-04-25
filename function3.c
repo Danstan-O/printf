@@ -1,8 +1,8 @@
 #include "main.h"
 
-/************************* PRINT UNSIGNED NUMBER *************************/
+/***************** PRINT UNSIGNED NUMBER ****************/
 /**
- * print_unsigned - Prints an unsigned number
+ * print_unsign - Prints an unsigned number
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -35,7 +35,7 @@ int print_unsign(va_list types, char buffer[],
 	return (write_unsign(0, i, buffer, flags, width, precision, size));
 }
 
-/************* PRINT UNSIGNED NUMBER IN OCTAL  ****************/
+/************* PRINTS UNSIGNED NUMBER IN OCTAL  ****************/
 /**
  * print_oct - Prints an unsigned number in octal notation
  * @types: Lista of arguments
@@ -77,7 +77,7 @@ int print_oct(va_list types, char buffer[],
 	return (write_unsign(0, i, buffer, flags, width, precision, size));
 }
 
-/************** PRINT UNSIGNED NUMBER IN HEXADECIMAL **************/
+/********** PRINTS UNSIGNED NUMBER IN HEXADECIMAL ***********/
 /**
  * print_hex_dec - Prints an unsigned number in hexadecimal notation
  * @types: Lista of arguments
@@ -95,7 +95,7 @@ int print_hex_dec(va_list types, char buffer[],
 		flags, 'x', width, precision, size));
 }
 
-/************* PRINT UNSIGNED NUMBER IN UPPER HEXADECIMAL **************/
+/************* PRINTS UNSIGNED NUMBER IN UPPER HEXADECIMAL **************/
 /**
  * print_hex_upper - Prints an unsigned number in upper hexadecimal notation
  * @types: Lista of arguments
@@ -154,7 +154,6 @@ int print_hex(va_list types, char map_to[], char buffer[],
 		buffer[i--] = flag_ch;
 		buffer[i--] = '0';
 	}
-
 	i++;
 
 	return (write_unsign(0, i, buffer, flags, width, precision, size));
